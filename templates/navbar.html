@@ -1,0 +1,50 @@
+{% block navbar %}
+<br>
+<br>
+<br>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <img src="data:image/png;base64,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" alt="Logo" width="50" height="46"/>
+    <a class="navbar-brand" href="home/"><i>Lavish job portal</i> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Lavish job portal</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs/">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="home/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              select job category
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="form/">Web Developer</a></li>
+              <li><a class="dropdown-item" href="form/">Data Scientist</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="form/">UI/UX Designer</a></li>
+              <li><a class="dropdown-item" href="form/">Software Engineer</a></li>
+              <li><a class="dropdown-item" href="form/">AI ML Engineer</a></li>
+              <li><a class="dropdown-item" href="form/">Cyber Security Analyst</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+{% endblock %}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    {% block navbar %}{% endblock %}
+    <br>
+    <br>
+    <br>
+    <h3 style="text-align: center;">About Us</h3>
+    <br>
+    <p class="text-center" style="margin:60px;">Welcome to Lavish Job Portal, your premier destination for connecting job seekers with top employers. Our mission is to simplify the job search process and help you find your dream job. This is achieved through our user-friendly platform, extensive job listings, and personalized support.</p>
+    {% include 'footer.html' %}
+    {% block footer %}{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
